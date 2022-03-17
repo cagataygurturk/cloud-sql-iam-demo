@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('springCloudGcpVersion', "2.0.2")
+}
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-gcp-starter-sql-mysql:1.2.5.RELEASE'
+}
